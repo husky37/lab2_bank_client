@@ -3,9 +3,9 @@
 
 class Client{
     constructor (
-        name = 'Arti',
-        surname = 'Krv',
-        date = 1990,
+        name = 'Петр',
+        surname = 'Петрович',
+        date = 1980,
         location = 'SaintPeterburg'
     ) {
         this.name = name;
