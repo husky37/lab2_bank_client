@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1220, initial-scale=1.5">
+    <title>Bank Client</title>
+    <script defer src="./index.js"></script>
+    <link href="./style.css" rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h3 class="subtitle">Создать клиента</h3>
+        <div class="header_container">
+
+            <form action="" name="form_client" class="form_create_client">
+                <div>
+                    <label for="name">Введите имя:</label>
+                    <input id="name" type="text">
+                    <label for="surname">Введите фамилию:</label>
+                    <input id="surname" type="text">
+                </div>
+                <div>
+                    <label for="data">Дату рождения:</label>
+                    <input id="data" type="number">
+                    <label for="location">Город:</label>
+                    <input id="location" type="text">
+                </div>
+                <input type="submit" class="button_create_client" value="Создать">
+            </form>
+
+            <form name='form_operation' class='form_operation_class'>
+                <div class="client_parameters">
+                    <Label for='cardNumber'>Введите номер карты:</Label>
+                    <input id='cardNumber' type='number'>
+                    <label for='value'>Введите сумму:</label>
+                    <input id='value' type='number'>
+                </div>
+                <div class="operation_buttions">
+                    <input type='submit' class='add_balance' value='Пополнить счет'>
+                    <input type='submit' class='withdraw_balance' value='Списать средства'>
+                </div>
+            </form>
+        </div>
+    </header>
+    <main class="main">
+            <div class="clients_contaner"></div>
+    </main>
+</body>
+</html>
